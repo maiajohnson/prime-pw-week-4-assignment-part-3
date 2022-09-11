@@ -6,6 +6,8 @@ console.log('***** Cart Functions *****');
 
 let basket = [];
 
+console.log(basket);
+
 // Create a function called addItem. It should:
 // take an input parameter for a string item
 // add the new item to the global array basket.
@@ -19,6 +21,7 @@ function addItem(item) {
 addItem('banana');
 addItem('melon');
 addItem('apple');
+console.log(basket);
 
 // Create a function called listItems. It should:
 // loop over the items in the basket array
@@ -32,7 +35,14 @@ function listItems() {
 
 listItems();
 
-
 // Create a function called empty. It should:
-
 // reset the basket to an empty array
+
+function empty() {
+   while (basket.length > 0) {
+     basket.pop();
+   }
+}
+
+empty();
+console.log(basket);
